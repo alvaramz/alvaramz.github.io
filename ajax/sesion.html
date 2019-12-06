@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Sesión usando ajax</title>
+</head>
+<body>
+    <button onclick="iniciarSesion()">Iniciar sesion</button>
+    <br>
+    <button onclick="guardarDato()">Guardar dato</button>
+    <br>
+    <button onclick="obtenerDato()">Obtener dato</button>
+
+
+    <script>
+        function iniciarSesion(){
+            var req = new XMLHttpRequest();
+
+            req.onload = function(){
+                alert("Sesión iniciada");
+            };
+
+            req.onerror = function(){
+                alert("Error: " + this.statusText);
+            };
+
+            req.withCredentials = true;
+            req.open("GET", "https://php-intermedio.000webhostapp.com/ajax/servicios/sesion.php");
+            req.send();
+        }
+        
+
+    </script>
+</body>
+</html>
