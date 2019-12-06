@@ -44,6 +44,7 @@
 
             req.withCredentials = true;
             req.open("POST", "https://php-intermedio.000webhostapp.com/ajax/servicios/guardar-en-sesion.php");
+            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             req.send("dato=23");
         }
 
