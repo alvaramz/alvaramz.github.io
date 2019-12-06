@@ -12,6 +12,7 @@
     <br>
     <button onclick="obtenerDato()">Obtener dato</button>
 
+    <div id="dato"></div>
 
     <script>
         function iniciarSesion(){
@@ -29,6 +30,39 @@
             req.open("GET", "https://php-intermedio.000webhostapp.com/ajax/servicios/sesion.php");
             req.send();
         }
+
+        function guardarDato(){
+            var req = new XMLHttpRequest();
+
+            req.onload = function(){
+                alert("Dato guardado");
+            };
+
+            req.onerror = function(){
+                alert("Error: " + this.statusText);
+            };
+
+            req.withCredentials = true;
+            req.open("POST", "https://php-intermedio.000webhostapp.com/ajax/servicios/guardar-en-sesion.php");
+            req.send("dato=23");
+        }
+
+        function obtenerDato(){
+            var req = new XMLHttpRequest();
+
+            req.onload = function(){
+                alert("Dato obtenido "  + this.responseText);
+            };
+
+            req.onerror = function(){
+                alert("Error: " + this.statusText);
+            };
+
+            req.withCredentials = true;
+            req.open("GET", "https://php-intermedio.000webhostapp.com/ajax/servicios/obtener-dato-sesion.php");
+            req.send();
+        }
+        
         
 
     </script>
