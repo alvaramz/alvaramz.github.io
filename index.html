@@ -1,26 +1,392 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sitio web del Ing. Adrián A. R.</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visionary Software Costa Rica S.A.</title>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="bg-body-secondary">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col text-center bg-info-subtle pb-3 pt-3">
-				<h1>Ing. Adrián A. R.</h1>
-			</div>
-		</div>
-	</div>
-	<div class="container pt-3">		
-		<div class="row">
-			<div class="col">				
-				<p>En construcción :)</p>
-			</div>
-		</div>		
-	</div>	
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80">
+
+    <!-- NAVBAR -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark navbar-blur fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="img/logo-visionary.png" alt="Logo Visionary Software" class="logo-navbar me-2">
+                <span class="fw-semibold">
+                    Visionary Software
+                    <span class="d-block small text-uppercase text-primary-subtle">Costa Rica S.A.</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#diferenciales">Por qué nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO PARALLAX -->
+    <header id="inicio" class="hero-section parallax d-flex align-items-center">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-white">
+                    <span class="badge rounded-pill bg-primary bg-opacity-75 mb-3">
+                        Visión tecnológica · Alcance nacional
+                    </span>
+                    <h1 class="display-4 fw-bold mb-3">
+                        Soluciones de software<br>para empresas tecnológicas
+                    </h1>
+                    <p class="lead mb-4">
+                        Visionary Software Costa Rica S.A. se especializa en la creación de software
+                        para empresas tecnológicas, la importación y comercialización de productos
+                        tecnológicos y la asesoría experta en el campo tecnológico.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#servicios" class="btn btn-primary btn-lg">
+                            Ver servicios
+                        </a>
+                        <a href="#contacto" class="btn btn-outline-light btn-lg">
+                            Agenda una reunión
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-4 mt-lg-0 text-lg-end text-center">
+                    <div class="hero-card shadow-lg">
+                        <h2 class="h5 text-uppercase text-primary fw-semibold mb-3">
+                            Expertos en transformación digital
+                        </h2>
+                        <p class="small text-light-emphasis mb-3">
+                            Acompañamos a empresas tecnológicas en cada etapa del ciclo de vida
+                            del software: desde la ideación y el diseño hasta el despliegue y la
+                            operación en producción.
+                        </p>
+                        <ul class="list-unstyled small mb-0 text-start">
+                            <li class="mb-1">✔ Desarrollo a la medida</li>
+                            <li class="mb-1">✔ Integraciones corporativas</li>
+                            <li class="mb-1">✔ Importación de soluciones tecnológicas</li>
+                            <li>✔ Consultoría estratégica en TI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="section-padding bg-body">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Sobre Visionary Software</h2>
+                    <p class="section-subtitle">
+                        Tecnología diseñada para impulsar negocios en Costa Rica y la región.
+                    </p>
+                    <p>
+                        En <strong>Visionary Software Costa Rica S.A.</strong> combinamos experiencia técnica,
+                        visión de negocio y un fuerte compromiso con la calidad. Nuestro equipo
+                        desarrolla soluciones robustas y escalables para empresas tecnológicas que
+                        buscan acelerar su innovación sin comprometer la seguridad ni la estabilidad
+                        de sus plataformas.
+                    </p>
+                    <p>
+                        Además del desarrollo de software, gestionamos la
+                        <strong>importación y comercialización de productos tecnológicos</strong>, y
+                        brindamos servicios de <strong>asesoría especializada</strong> para alinear la
+                        estrategia tecnológica con los objetivos corporativos.
+                    </p>
+                    <div class="row mt-4 g-3">
+                        <div class="col-sm-4">
+                            <div class="metric-card">
+                                <span class="metric-value">+10</span>
+                                <span class="metric-label">Años de experiencia</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="metric-card">
+                                <span class="metric-value">24/7</span>
+                                <span class="metric-label">Soporte crítico</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="metric-card">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Enfoque en calidad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-panel shadow-sm">
+                        <h3 class="h5 fw-semibold mb-3">Objeto social de la empresa</h3>
+                        <p class="mb-2">
+                            La empresa Visionary Software Costa Rica S.A. se encarga de:
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <span class="bullet-icon">●</span>
+                                La creación de software para empresas tecnológicas a nivel nacional.
+                            </li>
+                            <li class="mb-2">
+                                <span class="bullet-icon">●</span>
+                                La importación y comercialización de productos y soluciones tecnológicas.
+                            </li>
+                            <li>
+                                <span class="bullet-icon">●</span>
+                                La prestación de servicios de asesoría en el campo tecnológico.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Servicios principales</h2>
+                <p class="section-subtitle">
+                    Abarcamos todo el ecosistema tecnológico de tu empresa: software, infraestructura y consultoría.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">⟡</span>
+                        </div>
+                        <h3 class="h5 fw-semibold mb-2">Desarrollo de software a la medida</h3>
+                        <p class="mb-3">
+                            Aplicaciones web, móviles y de escritorio diseñadas específicamente
+                            para las necesidades de tu negocio, con arquitecturas modernas y
+                            procesos de desarrollo ágiles.
+                        </p>
+                        <ul class="small ps-3 mb-0">
+                            <li>Arquitecturas cloud-ready y microservicios</li>
+                            <li>Integración con sistemas legados</li>
+                            <li>Automatización de procesos de negocio</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">⇄</span>
+                        </div>
+                        <h3 class="h5 fw-semibold mb-2">Integración & consultoría tecnológica</h3>
+                        <p class="mb-3">
+                            Diagnóstico, diseño y ejecución de estrategias de transformación
+                            digital, con enfoque en seguridad, escalabilidad y continuidad de negocio.
+                        </p>
+                        <ul class="small ps-3 mb-0">
+                            <li>Integración de plataformas empresariales</li>
+                            <li>Evaluación de arquitecturas y performance</li>
+                            <li>Gobernanza y gestión de datos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">⤓</span>
+                        </div>
+                        <h3 class="h5 fw-semibold mb-2">Importación & comercialización de tecnología</h3>
+                        <p class="mb-3">
+                            Seleccionamos, importamos y distribuimos hardware, licencias de
+                            software y soluciones tecnológicas alineadas con las mejores prácticas
+                            del mercado.
+                        </p>
+                        <ul class="small ps-3 mb-0">
+                            <li>Servidores, networking y equipos especializados</li>
+                            <li>Licenciamiento de software empresarial</li>
+                            <li>Soluciones completas llave en mano</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARALLAX INTERMEDIO -->
+    <section class="section-parallax parallax d-flex align-items-center">
+        <div class="parallax-overlay"></div>
+        <div class="container position-relative text-center text-white">
+            <h2 class="display-6 fw-semibold mb-3">Tecnología que impulsa resultados</h2>
+            <p class="lead mb-4">
+                Trabajamos con estándares internacionales y buenas prácticas de ingeniería
+                para garantizar soluciones sostenibles, seguras y alineadas con los objetivos
+                estratégicos de tu organización.
+            </p>
+            <a href="#contacto" class="btn btn-outline-light btn-lg">
+                Conversemos sobre tu próximo proyecto
+            </a>
+        </div>
+    </section>
+
+    <!-- DIFERENCIALES -->
+    <section id="diferenciales" class="section-padding bg-body">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">¿Por qué trabajar con Visionary Software?</h2>
+                    <p class="section-subtitle">
+                        Más que proveedores, nos convertimos en aliados tecnológicos de largo plazo.
+                    </p>
+                    <ul class="list-unstyled check-list mb-0">
+                        <li>
+                            <strong>Enfoque en empresas tecnológicas:</strong> entendemos los desafíos
+                            de los modelos de negocio basados en software y plataformas digitales.
+                        </li>
+                        <li>
+                            <strong>Visión de arquitectura integral:</strong> observamos tu ecosistema
+                            completo para proponer soluciones coherentes y mantenibles.
+                        </li>
+                        <li>
+                            <strong>Acompañamiento de punta a punta:</strong> desde la estrategia hasta
+                            la implementación y operación diaria.
+                        </li>
+                        <li>
+                            <strong>Cumplimiento y buenas prácticas:</strong> seguridad, normativas,
+                            gestión de riesgos y documentación técnica de alto nivel.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="grid-panel">
+                        <div class="grid-item">
+                            <span class="grid-title">Sector tecnológico</span>
+                            <span class="grid-text">Especialización en empresas de software, fintech, telecomunicaciones y servicios digitales.</span>
+                        </div>
+                        <div class="grid-item">
+                            <span class="grid-title">Metodologías ágiles</span>
+                            <span class="grid-text">Equipos que trabajan con Scrum, Kanban y DevOps para entregar valor continuo.</span>
+                        </div>
+                        <div class="grid-item">
+                            <span class="grid-title">Alianzas estratégicas</span>
+                            <span class="grid-text">Red de socios tecnológicos para ofrecer soluciones completas de infraestructura y software.</span>
+                        </div>
+                        <div class="grid-item">
+                            <span class="grid-title">Cobertura nacional</span>
+                            <span class="grid-text">Atención a clientes en todo Costa Rica con capacidad de operación remota regional.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section-padding bg-light">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Contacto</h2>
+                    <p class="section-subtitle">
+                        Cuéntanos sobre tus retos tecnológicos y encontraremos la mejor ruta para tu empresa.
+                    </p>
+                    <div class="contact-card">
+                        <h3 class="h6 text-uppercase text-muted mb-3">Datos de contacto</h3>
+                        <p class="mb-1"><strong>Empresa:</strong> Visionary Software Costa Rica S.A.</p>
+                        <p class="mb-1"><strong>Correo:</strong> info@visionarysoftwarecr.com</p>
+                        <p class="mb-1"><strong>Teléfono:</strong> (+506) 2222-0000</p>
+                        <p class="mb-3"><strong>Ubicación:</strong> San José, Costa Rica</p>
+                        <p class="small mb-0 text-muted">
+                            También ofrecemos reuniones virtuales para equipos distribuidos a nivel nacional.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-form-card shadow-sm">
+                        <h3 class="h5 fw-semibold mb-3">Envíanos un mensaje</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="empresa" class="form-label">Empresa</label>
+                                    <input type="text" id="empresa" class="form-control" placeholder="Nombre de la empresa" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" id="email" class="form-control" placeholder="correo@ejemplo.com" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" id="telefono" class="form-control" placeholder="(+) código - número" />
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea id="mensaje" class="form-control" rows="4" placeholder="Descríbenos brevemente tu necesidad tecnológica"></textarea>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-primary px-4">
+                                        Enviar mensaje
+                                    </button>
+                                </div>
+                            </div>
+                        </form>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0 small">
+                © <span id="year"></span> Visionary Software Costa Rica S.A. Todos los derechos reservados.
+            </p>
+            <p class="mb-0 small text-muted">
+                Tecnología con visión a futuro.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (opcional, para menú responsive y scrollspy) -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Script mínimo para el año del footer -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
